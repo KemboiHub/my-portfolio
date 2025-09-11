@@ -359,29 +359,28 @@
                     emailjs.init("j9POvbYBMPdvU-ORC"); // 🔑 Replace with your EmailJS public key
                     })();
                 </script>
-                <section class="contact1">
-                    <h2>Contact Us</h2>
+                <div class="form-container">
                     <form id="contact-form">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="user_name" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="user_email" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit">Send Message</button>
-                    <p id="form-status"></p>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="user_name" placeholder="Enter your name" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="user_email" placeholder="Enter your email" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Enter subject" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Type your message here" required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                        <p id="form-status"></p>
                     </form>
-                </section>
+                </div>
                 <div class="contact-list">
                     <li><i class='bx bxs-send'></i>kiprutocosmas2001@gmail.com</li>
                     <li><i class="bx bxs-phone-call" ></i>254792151754</li>

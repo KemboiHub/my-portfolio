@@ -23,7 +23,7 @@ document.getElementById("contact-form").addEventListener("submit", function(even
   const status = document.getElementById("form-status");
   status.textContent = "Sending...";
 
-  emailjs.sendForm("service_w43r2zf", "YOUR_TEMPLATE_ID", this)
+  emailjs.sendForm("service_w43r2zf", "template_h65k9k6", this)
     .then(() => {
       status.textContent = "✅ Message sent successfully!";
       status.style.color = "green";
