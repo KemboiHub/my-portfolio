@@ -10,6 +10,7 @@
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
         <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
         
     </head>
     <body>
@@ -44,9 +45,10 @@
                     <a href="https://www.linkedin.com/in/kemboi-hub-991629226?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"style="--i:7" target="_blank"><i class='bx bxl-linkedin'></i></a>
                     <a href="https://github.com/KemboiHub"style="--i:10" target="_blank"><i class='bx bxl-github'></i></a>
                     <a href="https://x.com/kemboi_hub?t=jHfODKR4474ZoauKAtjWxA&s=09"style="--i:9" target="_blank"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://wa.me/qr/6CANVL6IIOKVB1"style="--i:9" target="_blank"><i class='bx bxl-whatsapp'></i></a>
                     
                 </div>
-                <a href="./img/COSMAS KIPRUTO CvJ24.pdf" style="--i:11" class="btn-box" target="_blank">Download Resume</a>
+                <a href="#Contact" style="--i:11" class="btn-box">HIRE ME</a>
             </div>
         </section>
 
@@ -75,12 +77,11 @@
                 <div class="container1">
                     <h1 class="heading1">Technical Skills</h1>
                     <div class="Technical-bars">
-
-                        <div class="bar"><i class='bx bxl-php' style="color: #6181b6;"></i>
+                        <div class="bar"><i class='bx bxl-javascript' style="color: #147bbc;"></i>
                             <div class="info">
-                                <span>PHP <span class="addhtml"></span></span>
+                                <span>JavaScript <span class="addcss"></span></span>
                             </div>
-                            <div class="progress-line html">
+                            <div class="progress-line css">
                                 <span></span>
                             </div>
                         </div>
@@ -92,11 +93,11 @@
                                 <span></span>
                             </div>
                         </div>
-                        <div class="bar"><i class='bx bxl-javascript' style="color: #147bbc;"></i>
+                        <div class="bar"><i class='bx bxl-php' style="color: #6181b6;"></i>
                             <div class="info">
-                                <span>JavaScript <span class="addcss"></span></span>
+                                <span>PHP <span class="addhtml"></span></span>
                             </div>
-                            <div class="progress-line css">
+                            <div class="progress-line html">
                                 <span></span>
                             </div>
                         </div>
@@ -349,10 +350,38 @@
                 </div>
             </div>    
         </section>
-      <section class="contacts" id="Contact">
+        <section class="contacts" id="Contact">
             <div class="contact-text">
                 <h2>Contact <span>Me</span></h2>
                 <h4>Let's Work Together</h4>
+                <script>
+                    (function() {
+                    emailjs.init("j9POvbYBMPdvU-ORC"); // 🔑 Replace with your EmailJS public key
+                    })();
+                </script>
+                <section class="contact1">
+                    <h2>Contact Us</h2>
+                    <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="user_name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="user_email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                    <p id="form-status"></p>
+                    </form>
+                </section>
                 <div class="contact-list">
                     <li><i class='bx bxs-send'></i>kiprutocosmas2001@gmail.com</li>
                     <li><i class="bx bxs-phone-call" ></i>254792151754</li>

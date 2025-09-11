@@ -17,3 +17,20 @@ window.addEventListener("scroll",() =>{
         toTop.classList.remove("active");
     }
 })
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const status = document.getElementById("form-status");
+  status.textContent = "Sending...";
+
+  emailjs.sendForm("service_w43r2zf", "YOUR_TEMPLATE_ID", this)
+    .then(() => {
+      status.textContent = "✅ Message sent successfully!";
+      status.style.color = "green";
+      this.reset();
+    }, (error) => {
+      console.error("EmailJS error:", error);
+      status.textContent = "❌ Failed to send message. Please try again.";
+      status.style.color = "red";
+    });
+});
